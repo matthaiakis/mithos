@@ -6,6 +6,7 @@ source 'http://rubygems.org'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'pg'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -35,6 +36,10 @@ gem 'sqlite3'
 
 gem 'refinerycms',              '~> 1.0.4'
 
+group :development do
+  gem 'heroku'
+  gem 'taps'
+end
 group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
   # Then, run 'rails generate refinerycms_testing' which will copy its support files.
@@ -48,12 +53,22 @@ end
 
 
 # Specify additional Refinery CMS Engines here (all optional):
-# gem 'refinerycms-inquiries',    '~> 1.0'
-# gem "refinerycms-news",         '~> 1.2'
-# gem 'refinerycms-blog',         '~> 1.6'
-# gem 'refinerycms-page-images',  '~> 1.0'
+gem 'refinerycms-inquiries',    '~> 1.0'
+gem "refinerycms-news",         '~> 1.2'
+gem 'refinerycms-blog',         '~> 1.6'
+gem 'refinerycms-page-images',  '~> 1.0'
 
 # Add i18n support (optional, you can remove this if you really want to).
 gem 'refinerycms-i18n',         '~> 1.0.0'
 
+# Extra refinery gems
+#gem "refinerycms-portfolio",              "~> 0.9.9"
+#gem "refinerycms-image_rotators",         "~> 0.5.0"
+#gem "refinerycms-multiform",              "~> 0.1.11"
+#gem "refinerycms-multiform-email-action", "~> 0.1.2"
+#### gem "refinerycms-homepage_slides",       :git => 'git://github.com/ryanfortin/refinerycms-homepage_slides'
 # END USER DEFINED
+
+
+#Memcache
+gem 'dalli'
