@@ -1,0 +1,13 @@
+#logo
+  %a{:href => root_path}
+    %img{:alt => RefinerySetting.find_or_set(:site_name, "Company Name"), :border => "0", :src => "/images/logo.png"}
+#cloud1.special_font
+  Open
+  %br>/
+  7 Days
+#cloud2.special_font 1300 555 555
+#main_menu
+  #menu-other-menu-container
+    %ul#menu-other-menu.menu
+      = render(:partial => "/shared/menu", :locals => { })
+ 

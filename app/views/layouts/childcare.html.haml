@@ -1,0 +1,189 @@
+!!!
+%html{:dir => "ltr", :lang => "en-US", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head{:profile => "http://gmpg.org/xfn/11"}
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title test
+    %meta{:content => "noindex,nofollow", :name => "robots"}/
+    %link{:href => "http://localhost/wordpress/?feed=rss2", :rel => "alternate", :title => "test &raquo; Feed", :type => "application/rss+xml"}/
+    %link{:href => "http://localhost/wordpress/?feed=comments-rss2", :rel => "alternate", :title => "test &raquo; Comments Feed", :type => "application/rss+xml"}/
+    %script{:src => "http://localhost/wordpress/wp-includes/js/l10n.js?ver=20101110", :type => "text/javascript"}
+    %script{:src => "http://localhost/wordpress/wp-includes/js/jquery/jquery.js?ver=1.6.1", :type => "text/javascript"}
+    %link{:href => "http://localhost/wordpress/xmlrpc.php?rsd", :rel => "EditURI", :title => "RSD", :type => "application/rsd+xml"}/
+    %link{:href => "http://localhost/wordpress/wp-includes/wlwmanifest.xml", :rel => "wlwmanifest", :type => "application/wlwmanifest+xml"}/
+    %link{:href => "http://localhost/wordpress", :rel => "index", :title => "test"}/
+    %meta{:content => "WordPress 3.2.1", :name => "generator"}/
+    / CSS
+    %link{:href => "http://localhost/wordpress/wp-content/themes/child_care_creative/style.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://localhost/wordpress/wp-content/themes/child_care_creative/css/content_styles.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://localhost/wordpress/wp-content/themes/child_care_creative/css/nivo-slider.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://localhost/wordpress/wp-content/themes/child_care_creative/shop.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://localhost/wordpress/wp-content/themes/child_care_creative/css/jquery.lightbox-0.5.css", :rel => "stylesheet", :type => "text/css"}/
+    / sharethis widget css
+    :css
+      a.stbar.chicklet img {border:0;height:16px;width:16px;margin-right:3px;vertical-align:middle;}
+      a.stbar.chicklet {height:16px;line-height:16px;}
+          / JAVASCRIPT
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.2/jquery-ui.min.js", :type => "text/javascript"}
+    %script{:src => "http://localhost/wordpress/wp-content/themes/child_care_creative/js/cufon-yui.js", :type => "text/javascript"}
+    %script{:src => "http://localhost/wordpress/wp-content/themes/child_care_creative/js/Sunshine_Poppy_400.font.js", :type => "text/javascript"}
+    %script{:src => "http://localhost/wordpress/wp-content/themes/child_care_creative/js/jquery.DOMWindow.js", :type => "text/javascript"}
+    %script{:src => "http://localhost/wordpress/wp-content/themes/child_care_creative/js/jquery.lightbox-0.5.pack.js", :type => "text/javascript"}
+    %script{:src => "http://localhost/wordpress/wp-content/themes/child_care_creative/js/jquery.nivo.slider.js", :type => "text/javascript"}
+    %script{:src => "http://localhost/wordpress/wp-content/themes/child_care_creative/js/jquery.cycle.min.js", :type => "text/javascript"}
+    /[if IE 6]
+      <script defer type="text/javascript" src="http://localhost/wordpress/wp-content/themes/child_care_creative/js/pngfix.js"></script>
+    %link{:href => "http://localhost/wordpress/xmlrpc.php", :rel => "pingback"}/
+    :javascript
+		jQuery(function(){
+            			Cufon.replace('h1');
+			Cufon.replace('h2');
+			Cufon.replace('h3');
+			Cufon.replace('.special_font');
+			Cufon.replace('h2 a', {
+				hover: true
+			});
+			Cufon.replace('#menu-main-menu a', {
+				hover: true
+			});
+            			jQuery('#menu-main-menu > li:last a').css('border',0);
+			jQuery('[rel=dtbaker_shop_lightbox]').lightBox({
+				imageLoading:			'http://localhost/wordpress/wp-content/themes/child_care_creative/images/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'http://localhost/wordpress/wp-content/themes/child_care_creative/images/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'http://localhost/wordpress/wp-content/themes/child_care_creative/images/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'http://localhost/wordpress/wp-content/themes/child_care_creative/images/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'http://localhost/wordpress/wp-content/themes/child_care_creative/images/lightbox-blank.gif'			// (string) Path and the name of a blank image (one pixel)
+			});
+			jQuery('.gallery a').lightBox({
+				imageLoading:			'http://localhost/wordpress/wp-content/themes/child_care_creative/images/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+				imageBtnPrev:			'http://localhost/wordpress/wp-content/themes/child_care_creative/images/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+				imageBtnNext:			'http://localhost/wordpress/wp-content/themes/child_care_creative/images/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+				imageBtnClose:			'http://localhost/wordpress/wp-content/themes/child_care_creative/images/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+				imageBlank:				'http://localhost/wordpress/wp-content/themes/child_care_creative/images/lightbox-blank.gif'			// (string) Path and the name of a blank image (one pixel)
+			});
+            jQuery('#slider').nivoSlider();
+		});
+	  %body.home.blog
+    #bg_top
+      #wrapper
+        #header
+          #logo
+            %a{:href => "http://localhost/wordpress/"}
+              %img{:alt => "test", :border => "0", :src => "http://localhost/wordpress/wp-content/themes/child_care_creative/images/logo.png"}/
+          / end logo
+          #cloud1.special_font
+            Open
+            %br>/
+            7 Days
+          #cloud2.special_font 1300 555 555
+          #main_menu
+            .menu
+              %ul
+                %li.page_item.page-item-2
+                  %a{:href => "http://localhost/wordpress/?page_id=2", :title => "Sample Page"} Sample Page
+          / end menu
+          #cart
+            .left
+            .icon
+              %img{:alt => "Cart", :height => "31", :src => "http://localhost/wordpress/wp-content/themes/child_care_creative/images/shop/icon_cart.png", :width => "33"}/
+            %ul.text
+              %li
+                %a{:href => "http://localhost/wordpress/?shopping_cart"} 0 items
+                %span.white |
+              %li
+                %a{:href => "http://localhost/wordpress/?shopping_cart"} $0.00
+                %span.white |
+              %li
+                %a{:href => "http://localhost/wordpress/?shopping_cart"} Checkout
+            .right
+          / end cart
+        / end header
+        #content_bg
+          / start main content area
+          #content
+            #slider-wrapper
+              #slider.nivoSlider
+                %a{:href => "#"}
+                  %img{:alt => "", :border => "0", :src => "http://localhost/wordpress/wp-content/themes/child_care_creative/images/slide1.jpg", :title => ""}/
+                %a{:href => "#"}
+                  %img{:alt => "", :border => "0", :src => "http://localhost/wordpress/wp-content/themes/child_care_creative/images/slide2.jpg", :title => ""}/
+                %a{:href => "#"}
+                  %img{:alt => "", :border => "0", :src => "http://localhost/wordpress/wp-content/themes/child_care_creative/images/slide3.jpg", :title => ""}/
+            / end slider
+            #news_column
+              %h2{:style => "padding-top:10px;"} Latest Products:
+              %ul.product_list.latest_products
+              %hr.clear/
+              %p &nbsp;
+              %h2 Our News
+              %ul
+                %li#post-1
+                  %hr.clear/
+                  .date
+                    %span.size24 22
+                    %br/
+                    %span.size18 Aug
+                    2011
+                  .text
+                    %strong
+                      %a{:href => "http://localhost/wordpress/?p=1", :rel => "bookmark", :title => "Permanent Link to Hello world!"} Hello world!
+                    %p Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!
+                  %hr.clear/
+            / end news
+            / start right column
+            .right_column
+              / Start green Box
+              .green_box_container{:onclick => "location.href='#';", :style => "cursor:pointer;"}
+                .image
+                  %img{:alt => "Family", :border => "0", :height => "114", :src => "http://localhost/wordpress/wp-content/themes/child_care_creative/images/icon_family.png", :width => "85"}/
+                .text
+                  %p.title.special_font
+                    %a{:href => "#"} Enroll Here
+                  %p Fill out the online form.
+                %hr.clear/
+              / End green Box
+              / Start blue Box
+              .blue_box_container{:onclick => "location.href='#';", :style => "cursor:pointer;"}
+                .image
+                  %img{:alt => "Location", :border => "0", :height => "114", :src => "http://localhost/wordpress/wp-content/themes/child_care_creative/images/icon_sign.png", :width => "85"}/
+                .text
+                  %p.title.special_font
+                    %a{:href => "#"} Find a center
+                  %p Locate your local center.
+                %hr.clear/
+              / End blue Box
+              #welcome_text
+                #post-1.post
+                  .entry
+                    %h1 Hello world!
+                    %p Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!
+              / end welcome text
+              %br.clear/
+            / end right column
+            %br.clear/
+            %br.clear/
+          / end main content area
+          %br.clear/
+        #content_bottom
+          %img{:alt => "bottom", :height => "5", :src => "http://localhost/wordpress/wp-content/themes/child_care_creative/images/content_bottom.jpg", :width => "980"}/
+        #footer
+          .left
+            %ul
+              %li &copy; test
+          / end left
+          .right
+            %ul
+              %li
+                This site proudly powered by
+                %a{:href => "http://wordpress.org/"} WordPress
+              %li
+                %a{:href => "http://localhost/wordpress/?feed=comments-rss2"} Comments (RSS)
+              %li
+                %a{:href => "http://localhost/wordpress/?feed=rss2"} Entries (RSS)
+          / end right
+        / end footer
+      / end wrapper
+    / end bg_top
+    #grass
+      #footer_design
+    / end grass
+    / 39 queries. 0.292 seconds.

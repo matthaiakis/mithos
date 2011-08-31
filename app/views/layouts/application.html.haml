@@ -1,0 +1,18 @@
+!!!
+= render :partial => "/shared/html_tag"
+- site_bar = render(:partial => "/shared/site_bar", :locals => {:head => true})
+= render :partial => "/shared/head"
+%body.home.blog
+  = site_bar
+  = render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/
+  #bg_top
+    #wrapper
+      %header
+        = render :partial => "/shared/header"
+  #grass
+    = render :partial => "/shared/footer"
+    %section#page
+    = yield
+    %footer
+    
+  = render :partial => "/shared/javascripts"

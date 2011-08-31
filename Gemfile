@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-# gem 'rails', '3.0.10'
+gem 'rails', '~> 3.0.10'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -45,6 +45,7 @@ group :development, :test do
   # Then, run 'rails generate refinerycms_testing' which will copy its support files.
   # Finally, run 'rake' to run the tests.
   # gem 'refinerycms-testing',    '~> 1.0.4'
+  gem 'hpricot'
 end
 
 # END REFINERY CMS ============================================================
@@ -72,3 +73,8 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 
 #Memcache
 gem 'dalli'
+gem 'haml'
+gem 'compass', "~> 0.11.5"
+
+# Amazon
+gem 'fog'

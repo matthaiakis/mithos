@@ -40,3 +40,7 @@ module Mithos
     config.filter_parameters += [:password]
   end
 end
+
+ENV['S3_KEY']='AKIAIVC4K4AUDFX2KXCQ'
+ENV['S3_SECRET']='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'
+ENV['S3_BUCKET']='cchildroom.production'
