@@ -34,7 +34,7 @@ gem 'pg'
 # REFINERY CMS ================================================================
 # Anything you put in here will be overridden when the app gets updated.
 
-gem 'refinerycms',              '~> 1.0.4'
+gem 'refinerycms',              '~> 1.0.8'
 
 group :development do
   gem 'heroku'
@@ -57,7 +57,7 @@ end
 gem 'refinerycms-inquiries',    '~> 1.0'
 gem "refinerycms-news",         '~> 1.2'
 gem 'refinerycms-blog',         '~> 1.6'
-gem 'refinerycms-page-images',  '~> 1.0'
+gem 'refinerycms-page-images',  '~> 1.0.4'
 
 # Add i18n support (optional, you can remove this if you really want to).
 gem 'refinerycms-i18n',         '~> 1.0.0'
@@ -67,7 +67,7 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 #gem "refinerycms-image_rotators",         "~> 0.5.0"
 #gem "refinerycms-multiform",              "~> 0.1.11"
 #gem "refinerycms-multiform-email-action", "~> 0.1.2"
-#### gem "refinerycms-homepage_slides",       :git => 'git://github.com/ryanfortin/refinerycms-homepage_slides'
+#gem "homepage_slides",       :git => 'git://github.com/ryanfortin/refinerycms-homepage_slides'
 # END USER DEFINED
 
 
@@ -78,3 +78,6 @@ gem 'compass', "~> 0.11.5"
 
 # Amazon
 gem 'fog'
+
+gem 'refinerycms-home_slides', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-home_slides', '1.0', :path => 'vendor/engines'
