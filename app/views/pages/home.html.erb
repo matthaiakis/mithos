@@ -1,1 +1,16 @@
+<% content_for :javascript_libraries do %> 
+  <%= javascript_include_tag 'jquery.nivo.slider' %> 
+<% end %> 
+
+<% content_for :after_javascript_libraries do %>
+	<script type="text/javascript">
+	  	jQuery(function(){
+	          jQuery('#slider').nivoSlider();
+	  	});
+	</script>
+<% end %> 
+
+
+
+<%= render :partial => "/shared/home_slides" %>
 <%= render :partial => "/shared/content_page" %>

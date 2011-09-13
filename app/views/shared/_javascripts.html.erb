@@ -1,4 +1,5 @@
 <%= yield :before_javascript_libraries -%>
+<%= javascript_include_tag 'jquery-1.4.4.min' %>
 <%= yield :javascript_libraries %>
 <%= yield :after_javascript_libraries %>
 <% if request.env['HTTP_USER_AGENT'] =~ /MSIE/ %>

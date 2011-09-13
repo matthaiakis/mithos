@@ -9,10 +9,13 @@
     #wrapper
       %header
         = render :partial => "/shared/header"
+      .content_bg
+        .content
+          = yield
   #grass
     = render :partial => "/shared/footer"
     %section#page
-    = yield
+   
     %footer
     
   = render :partial => "/shared/javascripts"

@@ -1,0 +1,9 @@
+<div id="slider-wrapper">
+	<div id="slider" class="nivoSlider">
+		<% HomepageSlide.all_enabled.each do |homepage_slide| -%>
+			<a href="<%= homepage_slide.link %>">
+				<%= image_fu homepage_slide.photo, :homepage_slide ,:alt => homepage_slide.title, :title=>homepage_slide.title %>
+			</a> 
+		 <% end %>
+	</div>
+</div>
