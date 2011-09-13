@@ -81,3 +81,4 @@ gem 'fog'
 
 
 gem 'refinerycms-homepage_slides', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-small_promos', '1.0', :path => 'vendor/engines'

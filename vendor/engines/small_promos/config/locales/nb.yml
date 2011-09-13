@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    small_promos:
+      title: Small Promos
+  admin:
+    small_promos:
+      actions:
+        create_new: Lag en ny Small Promo
+        reorder: Endre rekkefølgen på Small Promos
+        reorder_done: Ferdig å endre rekkefølgen Small Promos
+      records:
+        title: Small Promos
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Small Promos enda. Klikk på "Lag en ny Small Promo" for å legge til din første small promo.
+      small_promo:
+        view_live_html: Vis hvordan denne small promo ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne small promo
+        delete: Fjern denne small promo permanent
+  small_promos:
+    show:
+      other: Andre Small Promos

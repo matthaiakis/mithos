@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    small_promos:
+      title: Small Promos
+  admin:
+    small_promos:
+      actions:
+        create_new: CREATE NEW Small Promo
+        reorder: REORDR Small Promos
+        reorder_done: DUN REORDERIN Small Promos
+      records:
+        title: Small Promos
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Small Promos YET. CLICK "CREATE NEW Small Promo" 2 ADD UR FURST small promo.
+      small_promo:
+        view_live_html: VIEW DIS small promo LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS small promo
+        delete: REMOOV DIS small promo FOREVR
+  small_promos:
+    show:
+      other: OTHR Small Promos

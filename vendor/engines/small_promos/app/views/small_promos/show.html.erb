@@ -1,0 +1,57 @@
+<% content_for :body_content_title do %>
+  <%= @small_promo.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @small_promo.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Icon</h1>
+    <p>
+      <%= image_fu @small_promo.icon, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Position</h1>
+    <p>
+      <%=raw @small_promo.position %>
+    </p>
+  </section>
+  <section>
+    <h1>Body</h1>
+    <p>
+      <%=raw @small_promo.body %>
+    </p>
+  </section>
+  <section>
+    <h1>Enabled</h1>
+    <p>
+      <%=raw @small_promo.enabled %>
+    </p>
+  </section>
+  <section>
+    <h1>Link</h1>
+    <p>
+      <%=raw @small_promo.link %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="small_promos">
+      <% @small_promos.each do |small_promo| %>
+        <li>
+          <%= link_to small_promo.title, small_promo_path(small_promo) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

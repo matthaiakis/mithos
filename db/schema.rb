@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110912194305) do
+ActiveRecord::Schema.define(:version => 20110913144949) do
 
   create_table "home_slides", :force => true do |t|
     t.string   "title"
@@ -224,6 +224,19 @@ ActiveRecord::Schema.define(:version => 20110912194305) do
   add_index "slugs", ["locale"], :name => "index_slugs_on_locale"
   add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_n_s_s_and_s", :unique => true
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
+
+  create_table "small_promos", :force => true do |t|
+    t.string   "title"
+    t.integer  "icon_id"
+    t.integer  "position"
+    t.text     "body"
+    t.boolean  "enabled"
+    t.string   "link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "small_promos", ["id"], :name => "index_small_promos_on_id"
 
   create_table "user_plugins", :force => true do |t|
     t.integer "user_id"

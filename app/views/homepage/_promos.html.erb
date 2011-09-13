@@ -1,0 +1,19 @@
+<hr class="clear" />
+<div class="three_boxes">
+	<% SmallPromo.all_enabled.each do |promo| -%>
+	<div class="post-it" >
+		<div class="title special_font">
+			<%= promo.title %>
+		</div>
+		<div class="post-it_text">
+			<%= promo.body.html_safe %>
+		</div>
+		<div class="image">
+			<%= image_fu promo.icon, :promo ,:alt => promo.title, :title=>promo.title %>
+		</div>
+		<div class="button special_font">
+			<a href="<%= promo.link %>"> Learn More </a>
+		</div>
+	</div>
+	<% end %>
+</div>

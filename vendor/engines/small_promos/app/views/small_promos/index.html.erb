@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="small_promos">
+    <% @small_promos.each do |small_promo| %>
+      <li>
+        <%= link_to small_promo.title, small_promo_path(small_promo) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

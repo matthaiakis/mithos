@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    small_promos:
+      title: Small Promos
+  admin:
+    small_promos:
+      actions:
+        create_new: Maak een nieuwe Small Promo
+        reorder: Wijzig de volgorde van de Small Promos
+        reorder_done: Klaar met het wijzingen van de volgorde van de Small Promos
+      records:
+        title: Small Promos
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Small Promos. Druk op 'Maak een nieuwe Small Promo' om de eerste aan te maken.
+      small_promo:
+        view_live_html: Bekijk deze small promo op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze small promo
+        delete: Verwijder deze small promo voor eeuwig
+  small_promos:
+    show:
+      other: Andere Small Promos
