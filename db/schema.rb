@@ -11,7 +11,33 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110829133543) do
+ActiveRecord::Schema.define(:version => 20110912194305) do
+
+  create_table "home_slides", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.integer  "photo_id"
+    t.string   "link"
+    t.boolean  "enabled"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "home_slides", ["id"], :name => "index_home_slides_on_id"
+
+  create_table "homepage_slides", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.integer  "photo_id"
+    t.string   "link"
+    t.boolean  "enabled"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "homepage_slides", ["id"], :name => "index_homepage_slides_on_id"
 
   create_table "image_pages", :id => false, :force => true do |t|
     t.integer "image_id"

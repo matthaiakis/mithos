@@ -1,7 +1,7 @@
 PATH
   remote: vendor/engines
   specs:
-    refinerycms-home_slides (1.0)
+    refinerycms-homepage_slides (1.0)
 
 GEM
   remote: http://rubygems.org/
@@ -41,7 +41,7 @@ GEM
     awesome_nested_set (2.0.2)
       activerecord (>= 3.0.0)
     babosa (0.3.5)
-    bcrypt-ruby (3.0.0)
+    bcrypt-ruby (3.0.1)
     builder (2.1.2)
     chunky_png (1.2.1)
     compass (0.11.5)
@@ -157,7 +157,7 @@ GEM
       will_paginate (~> 3.0.0)
     refinerycms-dashboard (1.0.8)
       refinerycms-core (= 1.0.8)
-    refinerycms-generators (1.0.3)
+    refinerycms-generators (1.0.4)
     refinerycms-i18n (1.0.0)
       refinerycms-core (>= 0.9.9.12)
       routing-filter (>= 0.2.3)
@@ -233,7 +233,7 @@ DEPENDENCIES
   rails (~> 3.0.10)
   refinerycms (~> 1.0.8)
   refinerycms-blog (~> 1.6)
-  refinerycms-home_slides (= 1.0)!
+  refinerycms-homepage_slides (= 1.0)!
   refinerycms-i18n (~> 1.0.0)
   refinerycms-inquiries (~> 1.0)
   refinerycms-news (~> 1.2)

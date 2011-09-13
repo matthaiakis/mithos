@@ -79,5 +79,5 @@ gem 'compass', "~> 0.11.5"
 # Amazon
 gem 'fog'
 
-gem 'refinerycms-home_slides', '1.0', :path => 'vendor/engines'
-gem 'refinerycms-home_slides', '1.0', :path => 'vendor/engines'
+
+gem 'refinerycms-homepage_slides', '1.0', :path => 'vendor/engines'

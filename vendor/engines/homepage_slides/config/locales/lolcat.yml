@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    homepage_slides:
+      title: Homepage Slides
+  admin:
+    homepage_slides:
+      actions:
+        create_new: CREATE NEW Homepage Slide
+        reorder: REORDR Homepage Slides
+        reorder_done: DUN REORDERIN Homepage Slides
+      records:
+        title: Homepage Slides
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Homepage Slides YET. CLICK "CREATE NEW Homepage Slide" 2 ADD UR FURST homepage slide.
+      homepage_slide:
+        view_live_html: VIEW DIS homepage slide LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS homepage slide
+        delete: REMOOV DIS homepage slide FOREVR
+  homepage_slides:
+    show:
+      other: OTHR Homepage Slides
